@@ -28,3 +28,18 @@ let e = 5.0 // Double
 //We can ->
 let f = d + Int(e) //   Но оно не округляет, а обрезает!
 // Но лучше переводить в дабл чтоб результвт был самым точным
+
+
+let g: Float = 5.0
+let h = 5.2
+
+//let i = g + h // will not work -> different types
+
+typealias AlexNumber = Int // новый тим является анналогичной версией инта!
+
+let z: AlexNumber = 5
+let x = 5.2
+
+let y = z + AlexNumber(x)
+
+
