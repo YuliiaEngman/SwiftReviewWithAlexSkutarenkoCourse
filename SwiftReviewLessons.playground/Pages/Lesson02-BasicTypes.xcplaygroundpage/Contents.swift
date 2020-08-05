@@ -42,4 +42,40 @@ let x = 5.2
 
 let y = z + AlexNumber(x)
 
+// Bool: true or false
+
+let k = true
+
+
+// HOME WORK:
+
+print("Int8 minimum = \(Int8.min)")
+print("Int8 maximum = \(Int8.max)")
+print(UInt8.min)
+print(UInt8.max)
+
+let s = 9 // Int
+let r = 7.6 // Double
+let l: Float = 4.6 // Float
+
+// #1
+let v = Double(9) + r + Double(l)
+let m = Int(v)
+print(m)
+
+//#2
+let u = Float(s) + Float(r) + l
+print(u)
+
+// #3
+let w = Double(s) + r + Double(l)
+print(w)
+
+if Double(m) < w {
+    print("Double result is more accurate then sum of integers")
+} else {
+    print("Integer result is accurate")
+}
+
+
 
