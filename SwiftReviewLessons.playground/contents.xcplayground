@@ -3,6 +3,6 @@
     <pages>
         <page name='Lesson01-Basics'/>
         <page name='Lesson02-BasicTypes'/>
-        <page name='Untitled Page 2'/>
+        <page name='Lesson03-Tuples'/>
     </pages>
 </playground>

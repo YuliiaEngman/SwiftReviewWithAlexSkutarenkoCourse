@@ -59,7 +59,7 @@ let r = 7.6 // Double
 let l: Float = 4.6 // Float
 
 // #1
-let v = Double(9) + r + Double(l)
+let v = Double(9) + r + Double(l) // можно в одно действие let v = Int(Double(9) + r + Double(l))
 let m = Int(v)
 print(m)
 
@@ -73,6 +73,8 @@ print(w)
 
 if Double(m) < w {
     print("Double result is more accurate then sum of integers")
+} else if Double(m) < w {
+    print("Double result is equal to integers")
 } else {
     print("Integer result is accurate")
 }
