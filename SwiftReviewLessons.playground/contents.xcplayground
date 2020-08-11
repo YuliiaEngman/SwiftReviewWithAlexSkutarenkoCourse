@@ -4,5 +4,7 @@
         <page name='Lesson01-Basics'/>
         <page name='Lesson02-BasicTypes'/>
         <page name='Lesson03-Tuples'/>
+        <page name='Lesson04-Optionals'/>
+        <page name='Lesson08-Dictionary'/>
     </pages>
 </playground>
