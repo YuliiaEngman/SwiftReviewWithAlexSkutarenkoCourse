@@ -59,3 +59,41 @@ assert(apples2 != nil, "oh no!!!") // только для дебага
 
 apples2 = apples2 + 5
 
+// HOMEWORKS
+
+
+// # 1
+// Find a sum of Strings that are numbers and return Int
+let a: String? = "5"
+let b: String? = "90Boo"
+let c: String? = "90"
+let d: String? = "WOW"
+let e: String? = "100"
+
+var sum = 0
+
+if let aInt = Int(a!) {
+    sum = aInt
+}
+print(sum)
+
+if let bString = b {
+    if let bInt = Int(bString) {
+        sum = bInt
+    }
+}
+print(sum)
+
+sum = sum + Int(c!)!
+
+print(sum)
+
+if let dString = d {
+    if let dInt = Int(dString) {
+          sum = dInt
+    }
+}
+
+sum = sum + Int(e!)!
+
+print(sum)
