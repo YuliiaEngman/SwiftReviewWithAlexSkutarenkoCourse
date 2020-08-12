@@ -64,36 +64,43 @@ apples2 = apples2 + 5
 
 // # 1
 // Find a sum of Strings that are numbers and return Int
-let a: String? = "5"
-let b: String? = "90Boo"
-let c: String? = "90"
-let d: String? = "WOW"
-let e: String? = "100"
+let a: String = "5"
+let b: String = "90Boo"
+let c: String = "90"
+let d: String = "WOW"
+let e: String = "100"
 
 var sum = 0
 
-if let aInt = Int(a!) {
+if let aInt = Int(a) {
     sum = aInt
 }
 print(sum)
 
-if let bString = b {
-    if let bInt = Int(bString) {
-        sum = bInt
-    }
-}
-print(sum)
-
-sum = sum + Int(c!)!
-
-print(sum)
-
-if let dString = d {
-    if let dInt = Int(dString) {
-          sum = dInt
-    }
+if let bInt = Int(b) {
+    sum = bInt
 }
 
-sum = sum + Int(e!)!
+print(sum)
+
+sum = sum + Int(c)!
 
 print(sum)
+
+if let dInt = Int(d) {
+    sum = dInt
+}
+
+sum = sum + Int(e)!
+
+print(sum)
+
+// # 2
+
+// Tuple from Server
+// #1 Int
+// #2 String? - Message 200-299
+// #3 String? - Error
+
+//if from 200 to 300 excluding - show message
+// if not error message
