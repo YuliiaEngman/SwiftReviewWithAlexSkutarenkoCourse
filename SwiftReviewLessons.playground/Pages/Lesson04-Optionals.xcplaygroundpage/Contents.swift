@@ -104,3 +104,31 @@ print(sum)
 
 //if from 200 to 300 excluding - show message
 // if not error message
+//
+//let code: Int = 200
+//var serverMessage: String?
+//var serverError: String?
+
+var tupleFromServer: (code: Int, serverMessage: String?, serverError: String?)
+tupleFromServer.code = 200
+tupleFromServer.serverMessage = ""
+tupleFromServer.serverError = ""
+
+if tupleFromServer.code < 200 || tupleFromServer.code >= 300  {
+    tupleFromServer.serverError = "Error reaching to the server"
+    print(tupleFromServer.serverError!)
+} else {
+    tupleFromServer.serverMessage = "Succesfull response from the server"
+    print(tupleFromServer.serverMessage!)
+}
+
+var secondTuple: (serverMessage: String?, serverError: String?)
+
+if secondTuple.serverMessage == nil {
+    secondTuple.serverError = "Error reaching to the server"
+} else if secondTuple.serverError == nil {
+    secondTuple.serverMessage = "Succesfull response from the server"
+}
+
+// #3
+
