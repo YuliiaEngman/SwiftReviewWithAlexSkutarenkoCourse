@@ -130,5 +130,43 @@ if secondTuple.serverMessage == nil {
     secondTuple.serverMessage = "Succesfull response from the server"
 }
 
-// #3
+// #3 (? or !)
+
+var student1: (name: String, carPlate: String?, grade: Int?)
+
+var student2: (name: String, carPlate: String?, grade: Int?)
+
+var student3: (name: String, carPlate: String?, grade: Int?)
+
+var student4: (name: String, carPlate: String?, grade: Int?)
+
+var student5: (name: String, carPlate: String?, grade: Int?)
+
+student1.name = "Iliya"
+student2.name = "Igor"
+student3.name = "Misha"
+student4.name = "Lilia"
+student5.name = "Bela"
+
+student1.carPlate = nil
+student1.grade = nil
+
+
+
+if student1.name == "Iliya" {
+    student1.carPlate = "B654M"
+    student1.grade = 5
+} else if student2.name == "Igor" {
+    student1.grade = 4
+} else if student3.name == "Misha" {
+student1.carPlate = "BEST"
+} else if student4.name == "Lilia" {
+student1.carPlate = "BOO"
+student1.grade = 2
+}
+
+print(student1)
+
+
+
 
