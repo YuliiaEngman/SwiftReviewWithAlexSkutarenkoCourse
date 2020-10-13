@@ -48,3 +48,39 @@ for c in "Hello world!" {
 str1.append(char1) //"bx"
 
 // We can move from Swift to Obj-C by using NSString
+
+(str1 as NSString).length // 2
+NSString(string: str1).length // 2
+
+// Строка - наор сколярных Юникод символов (числа - 21 битное (2 байта(по 8 бит каждое) + 5 бит))
+
+let heart = "\u{1F496}"
+
+var fun: Character = "ъ"
+
+let funString = "what is this? -> \(fun)"
+
+funString
+
+funString.count // 18
+
+if funString == "aa" {
+    
+} else {
+    print("not equal")
+}
+
+
+// =====================
+// Prefix
+
+funString.hasPrefix("what") // true
+
+// =====================
+// Suffix
+funString.hasSuffix("ъ") // true
+
+
+
+// ============================== HOME WORK ========================== //
+
