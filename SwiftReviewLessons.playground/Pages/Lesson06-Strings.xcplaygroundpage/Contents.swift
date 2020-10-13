@@ -84,3 +84,21 @@ funString.hasSuffix("ъ") // true
 
 // ============================== HOME WORK ========================== //
 
+// 1) Using optionals from previous lesson pring a string using string interpolation:
+//??
+/*
+let multiplier = 3
+let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
+// message is "3 times 2.5 is 7.5"
+ */
+
+// 2) Using optionals from previous lesson pring a string using string concotonation:
+
+
+// 3) Find 5 funny unicode symbols
+// Count lengs by .count and by NSSTring.length (maybe different)
+
+
+// 4) Make alphabet lowercased
+// using for loop find index of some character in alphabet!
+
