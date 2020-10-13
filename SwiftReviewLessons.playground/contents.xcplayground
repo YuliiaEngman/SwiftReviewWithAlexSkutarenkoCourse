@@ -6,6 +6,6 @@
         <page name='Lesson03-Tuples'/>
         <page name='Lesson04-Optionals'/>
         <page name='Lesson08-Dictionary'/>
-        <page name='Strings'/>
+        <page name='Lesson06-Strings'/>
     </pages>
 </playground>

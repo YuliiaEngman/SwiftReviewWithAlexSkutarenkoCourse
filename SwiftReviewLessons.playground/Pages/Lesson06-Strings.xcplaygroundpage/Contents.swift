@@ -2,8 +2,9 @@
 
 import Foundation
 
-//
-
+// ======================================= //
+// STRING - is a struct
+// ====================================== //
 var str = "c" // or
 // var str = String() // String is a struct - уаорядоченная коллекция characters
 
@@ -30,10 +31,20 @@ str1
 str2
 
 str1.isEmpty // false
-
+ 
 //===============================================================//
-// CHARACTERS
+// CHARACTERS - it is enum
 //===============================================================//
 
-let char1: Charecter = "x"
+let char1: Character = "x"
 
+for c in "Hello world!" {
+    print(c) // will print in separate string
+}
+
+// String and Character we cannot combine since they are differrent types
+// BUT!!!! WE can append character to string!
+
+str1.append(char1) //"bx"
+
+// We can move from Swift to Obj-C by using NSString
