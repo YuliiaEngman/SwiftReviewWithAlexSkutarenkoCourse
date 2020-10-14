@@ -84,9 +84,9 @@ funString.hasSuffix("ъ") // true
 
 // ============================== HOME WORK ========================== //
 
-// 1) Using optionals from previous lesson pring a string using string interpolation:
+// 1) Using optionals from previous lesson print a string using string interpolation:
 //??
-/*
+/* Interpolation example:
 let multiplier = 3
 let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
 // message is "3 times 2.5 is 7.5"
@@ -97,6 +97,27 @@ let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
 
 // 3) Find 5 funny unicode symbols
 // Count lengs by .count and by NSSTring.length (maybe different)
+
+let doughnut = "\u{1f369}"
+doughnut.count // 1
+NSString(string: doughnut).length // 2
+
+let koala = "\u{1F428}"
+koala.count // 1
+NSString(string: koala).length // 2
+
+let palm = "\u{1F3DD}"
+palm.count // 1
+NSString(string: palm).length // 2
+
+let key = "\u{1F511}"
+key.count // 1
+NSString(string: key).length // 2
+
+let home = "\u{1F3E1}"
+home.count // 1
+NSString(string: home).length // 2
+ 
 
 
 // 4) Make alphabet lowercased
