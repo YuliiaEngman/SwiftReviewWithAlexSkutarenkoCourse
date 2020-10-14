@@ -92,7 +92,17 @@ let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
 // message is "3 times 2.5 is 7.5"
  */
 
+let apples: Int? = 5
+let pears: Int? = 3
+let yetti: String? = "Yetti"
+let age: Int? = 50
+let location: String? = "nountains"
+
+print("The \(yetti ?? "mountain man") that is \(age ?? 0) years old that lives in \(location ?? "somewhere") has \(apples ?? 0) apples and \(pears ?? 0) pears.")
+
+
 // 2) Using optionals from previous lesson pring a string using string concotonation:
+print("The Yetti that is 50 years old that lives in nountains has 5 apples and 3 pears.")
 
 
 // 3) Find 5 funny unicode symbols
