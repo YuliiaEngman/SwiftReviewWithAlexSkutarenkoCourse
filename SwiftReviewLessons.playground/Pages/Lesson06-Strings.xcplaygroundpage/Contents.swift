@@ -1,6 +1,8 @@
 //: [Previous](@previous)
 
-import Foundation
+import Foundation // to work with objective-C we always have to have imported Foundation
+
+
 
 // ======================================= //
 // STRING - is a struct
@@ -92,17 +94,22 @@ let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
 // message is "3 times 2.5 is 7.5"
  */
 
-let apples: Int? = 5
-let pears: Int? = 3
-let yetti: String? = "Yetti"
-let age: Int? = 50
-let location: String? = "nountains"
+let apples = "5" // When we transfor String to Int we get optional result, that is why we need to unwrapt it!
+let pears = "3"
+let yetti = "Yetti"
+let age = "50"
+let location = "Mountains"
 
-print("The \(yetti ?? "mountain man") that is \(age ?? 0) years old that lives in \(location ?? "somewhere") has \(apples ?? 0) apples and \(pears ?? 0) pears.")
+print("The \(yetti) that is \(Int(age) ?? 0) years old that lives in \(location) has \(Int(apples) ?? 0) apples and \(Int(pears) ?? 0) pears.")
 
+let aB = "1"
+let bB = "2b"
+let cB = "3"
+
+let string = "\(Int(aB) ?? nil) + \(Int(bB) ?? nil) + \(Int(cB) ?? nil)"
 
 // 2) Using optionals from previous lesson pring a string using string concotonation:
-print("The Yetti that is 50 years old that lives in nountains has 5 apples and 3 pears.")
+print("The \(yetti) that is \(age) years old that lives in \(location) has \(apples) apples and \(pears) pears.")
 
 
 // 3) Find 5 funny unicode symbols
