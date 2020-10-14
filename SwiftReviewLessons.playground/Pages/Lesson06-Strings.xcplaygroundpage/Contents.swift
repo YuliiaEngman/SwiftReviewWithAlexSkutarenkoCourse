@@ -123,3 +123,17 @@ NSString(string: home).length // 2
 // 4) Make alphabet lowercased
 // using for loop find index of some character in alphabet!
 
+func indexFinder(_ alphabet: String, character: Character) -> Int {
+    let lowercasedAlphabeth = alphabet.lowercased()
+    //var searchedIndex = -1
+    
+    for (index, char) in lowercasedAlphabeth.enumerated() {
+        if char == character {
+            return index
+        }
+    }
+    return -1
+}
+
+print(indexFinder("Abcdefghigklmnopqrstuvwxyz", character: "y"))
+
